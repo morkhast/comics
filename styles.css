@@ -1,25 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Чтобы предотвратить появление полосы прокрутки */
+    overflow: auto; /* Используйте auto, чтобы включить прокрутку, когда это необходимо */
 }
 
 #comic-container {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Занимает всю высоту видимой области */
 }
 
 .comic-page {
-    width: 100%;
+    width: 100vw; /* Занимает всю ширину видимой области */
     height: 100vh; /* Занимает всю высоту видимой области */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; /* Скрыть горизонтальную прокрутку внутри каждой страницы */
 }
 
 .comic-page img {
-    max-width: 100%; /* Растягивается по ширине контейнера, но не больше оригинального размера */
+    width: 100%; /* Растягивается по ширине контейнера */
     height: auto; /* Сохраняет пропорции изображения */
 }
 

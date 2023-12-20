@@ -12,14 +12,14 @@ body {
 
 .comic-page {
     width: 100%;
-    height: 100%;
+    height: 100vh; /* Занимает всю высоту видимой области */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .comic-page img {
-    width: 100%; /* Растягивается по ширине контейнера */
+    max-width: 100%; /* Растягивается по ширине контейнера, но не больше оригинального размера */
     height: auto; /* Сохраняет пропорции изображения */
 }
 

@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    margin: 10px 0; /* Добавляем отступ между картинками */
+    margin: 0; /* Добавляем отступ между картинками */
     padding: 0;
 }
 

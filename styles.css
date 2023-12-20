@@ -7,20 +7,19 @@ body {
 #comic-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .comic-page {
-    width: 100vw; /* Занимает всю ширину видимой области */
-    height: 100vh; /* Занимает всю высоту видимой области */
+    width: 100%; /* Занимает всю ширину доступной области */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0; /* Запрещает уменьшение размеров внутреннего контента */
+    flex-grow: 1; /* Равномерное распределение по высоте */
 }
 
 .comic-page img {
     max-width: 100%; /* Растягивается по ширине контейнера, но не больше оригинального размера */
     height: auto; /* Сохраняет пропорции изображения */
 }
-
 

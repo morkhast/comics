@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: auto; /* Используйте auto, чтобы включить прокрутку, когда это необходимо */
+    overflow: auto;
 }
 
 #comic-container {
@@ -11,15 +11,18 @@ body {
 }
 
 .comic-page {
-    width: 100%; /* Занимает всю ширину доступной области */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Равномерное распределение по высоте */
+    flex-grow: 1;
+    margin: 0; /* Убираем внешние отступы */
+    padding: 0; /* Убираем внутренние отступы */
 }
 
 .comic-page img {
-    max-width: 100%; /* Растягивается по ширине контейнера, но не больше оригинального размера */
-    height: auto; /* Сохраняет пропорции изображения */
+    max-width: 100%;
+    height: auto;
+    display: block; /* Убираем возможные отступы внизу изображения */
 }
 

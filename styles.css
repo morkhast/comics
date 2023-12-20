@@ -1,20 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden; /* Чтобы предотвратить появление полосы прокрутки */
 }
 
 #comic-container {
     display: flex;
     flex-direction: column;
+    height: 100vh; /* Занимает всю высоту видимой области */
 }
 
 .comic-page {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    /* Добавьте стили для каждой страницы комикса */
 }
+
+.comic-page img {
+    width: 100%; /* Растягивается по ширине контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+

@@ -16,13 +16,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    margin: 0; /* Убираем внешние отступы */
-    padding: 0; /* Убираем внутренние отступы */
+    margin: 10px 0; /* Добавляем отступ между картинками */
+    padding: 0;
 }
 
 .comic-page img {
     max-width: 100%;
     height: auto;
-    display: block; /* Убираем возможные отступы внизу изображения */
+    display: block;
 }
 
